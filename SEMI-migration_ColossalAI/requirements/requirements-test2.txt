@@ -1,0 +1,13 @@
+diffusers
+fbgemm-gpu==0.2.0
+pytest
+pytest-cov
+torchvision
+transformers
+timm
+titans
+torchaudio
+torchrec==0.2.0
+contexttimer
+einops
+triton==2.0.0.dev20221202

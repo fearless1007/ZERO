@@ -1,0 +1,89 @@
+[04/19/23 08:53:10] INFO     colossalai - colossalai - INFO:                    
+                             /home/wangzhigangcs/anaconda3/envs/colossalaipy39/l
+                             ib/python3.9/site-packages/colossalai/context/paral
+                             lel_context.py:521 set_device                      
+[04/19/23 08:53:10] INFO     colossalai - colossalai - INFO:                    
+                             /home/wangzhigangcs/anaconda3/envs/colossalaipy39/l
+                             ib/python3.9/site-packages/colossalai/context/paral
+                             lel_context.py:521 set_device                      
+[04/19/23 08:53:10] INFO     colossalai - colossalai - INFO:                    
+                             /home/wangzhigangcs/anaconda3/envs/colossalaipy39/l
+                             ib/python3.9/site-packages/colossalai/context/paral
+                             lel_context.py:521 set_device                      
+[04/19/23 08:53:10] INFO     colossalai - colossalai - INFO:                    
+                             /home/wangzhigangcs/anaconda3/envs/colossalaipy39/l
+                             ib/python3.9/site-packages/colossalai/context/paral
+                             lel_context.py:521 set_device                      
+                    INFO     colossalai - colossalai - INFO: process rank 2 is  
+                             bound to device 2                                  
+                    INFO     colossalai - colossalai - INFO: process rank 0 is  
+                             bound to device 0                                  
+                    INFO     colossalai - colossalai - INFO: process rank 1 is  
+                             bound to device 1                                  
+                    INFO     colossalai - colossalai - INFO: process rank 3 is  
+                             bound to device 3                                  
+[04/19/23 08:53:13] INFO     colossalai - colossalai - INFO:                    
+                             /home/wangzhigangcs/anaconda3/envs/colossalaipy39/l
+                             ib/python3.9/site-packages/colossalai/context/paral
+                             lel_context.py:557 set_seed                        
+[04/19/23 08:53:13] INFO     colossalai - colossalai - INFO:                    
+                             /home/wangzhigangcs/anaconda3/envs/colossalaipy39/l
+                             ib/python3.9/site-packages/colossalai/context/paral
+                             lel_context.py:557 set_seed                        
+[04/19/23 08:53:13] INFO     colossalai - colossalai - INFO:                    
+                             /home/wangzhigangcs/anaconda3/envs/colossalaipy39/l
+                             ib/python3.9/site-packages/colossalai/context/paral
+                             lel_context.py:557 set_seed                        
+[04/19/23 08:53:13] INFO     colossalai - colossalai - INFO:                    
+                             /home/wangzhigangcs/anaconda3/envs/colossalaipy39/l
+                             ib/python3.9/site-packages/colossalai/context/paral
+                             lel_context.py:557 set_seed                        
+                    INFO     colossalai - colossalai - INFO: initialized seed on
+                             rank 3, numpy: 1024, python random: 1024,          
+                             ParallelMode.DATA: 1024, ParallelMode.TENSOR:      
+                             1025,the default parallel seed is                  
+                             ParallelMode.DATA.                                 
+                    INFO     colossalai - colossalai - INFO: initialized seed on
+                             rank 2, numpy: 1024, python random: 1024,          
+                             ParallelMode.DATA: 1024, ParallelMode.TENSOR:      
+                             1024,the default parallel seed is                  
+                             ParallelMode.DATA.                                 
+                    INFO     colossalai - colossalai - INFO: initialized seed on
+                             rank 0, numpy: 1024, python random: 1024,          
+                             ParallelMode.DATA: 1024, ParallelMode.TENSOR:      
+                             1024,the default parallel seed is                  
+                             ParallelMode.DATA.                                 
+                    INFO     colossalai - colossalai - INFO: initialized seed on
+                             rank 1, numpy: 1024, python random: 1024,          
+                             ParallelMode.DATA: 1024, ParallelMode.TENSOR:      
+                             1025,the default parallel seed is                  
+                             ParallelMode.DATA.                                 
+                    INFO     colossalai - colossalai - INFO:                    
+                             /home/wangzhigangcs/anaconda3/envs/colossalaipy39/l
+                             ib/python3.9/site-packages/colossalai/initialize.py
+                             :116 launch                                        
+                    INFO     colossalai - colossalai - INFO: Distributed        
+                             environment is initialized, data parallel size: 2, 
+                             pipeline parallel size: 1, tensor parallel size: 2 
+                    INFO     colossalai - colossalai - INFO:                    
+                             /home/wangzhigangcs/bigmodelresearch/ColossalAI/Col
+                             ossalAI/examples/images/vit/train.py:77            
+                             train_imagenet                                     
+                    INFO     colossalai - colossalai - INFO: Build data loader  
+Error: failed to run torchrun --nproc_per_node=4 --nnodes=1 --node_rank=0 --rdzv_backend=c10d --rdzv_endpoint=127.0.0.1:29598 --rdzv_id=colossalai-default-job train.py --config configs/vit_1d_tp2.py on 127.0.0.1, is localhost: True, exception: Encountered a bad command exit code!
+
+Command: 'cd /home/wangzhigangcs/bigmodelresearch/ColossalAI/ColossalAI/examples/images/vit && export CUDA_VISIBLE_DEVICES="4,5,6,7" XDG_SESSION_ID="1177" HOSTNAME="gpu11" WANDB_DISABLED="true" SHELL="/bin/bash" TERM="xterm" HISTSIZE="1000" SSH_CLIENT="10.16.2.1 55682 22" CONDA_SHLVL="2" CONDA_PROMPT_MODIFIER="(colossalaipy39) " SSH_TTY="/dev/pts/0" USER="wangzhigangcs" CUDA_HOME="/usr/local/cuda" LS_COLORS="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:" LD_LIBRARY_PATH="/home/wangzhigangcs/.tensornvme/lib:/home/wangzhigangcs/modules/TensorRT-7.2.3.4/lib:/usr/local/cuda/lib64:" CONDA_EXE="/home/wangzhigangcs/anaconda3/bin/conda" DATA="/data/scratch/imagenet/tf_records" NCCL_ROOT="/usr/local/cuda/lib64" CONDA_PREFIX_1="/home/wangzhigangcs/anaconda3" PATH="/home/wangzhigangcs/pdsh/bin:/home/wangzhigangcs/anaconda3/envs/colossalaipy39/bin:/home/wangzhigangcs/anaconda3/condabin:/usr/local/cuda/bin:/usr/lib64/qt-3.3/bin:/root/perl5/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin:/usr/local/docker-inspur/bin:.:/usr/local/cuda/bin:/home/wangzhigangcs/.local/bin:/home/wangzhigangcs/bin" MAIL="/var/spool/mail/wangzhigangcs" CONDA_PREFIX="/home/wangzhigangcs/anaconda3/envs/colossalaipy39" PWD="/home/wangzhigangcs/bigmodelresearch/ColossalAI/ColossalAI/examples/images/vit" LANG="zh_CN.UTF-8" MODULEPATH="/usr/share/Modules/modulefiles:/etc/modulefiles" HISTCONTROL="ignoredups" HOME="/home/wangzhigangcs" SHLVL="2" LOGNAME="wangzhigangcs" CONDA_PYTHON_EXE="/home/wangzhigangcs/anaconda3/bin/python" SSH_CONNECTION="10.16.2.1 55682 10.16.202.11 22" MODULESHOME="/usr/share/Modules" OMP_NUM_THREADS="4" LESSOPEN="||/usr/bin/lesspipe.sh %s" CONDA_DEFAULT_ENV="colossalaipy39" XDG_RUNTIME_DIR="/run/user/1070" TENSORRT_HOME="/home/wangzhigangcs/modules/TensorRT-7.2.3.4" _="/home/wangzhigangcs/anaconda3/envs/colossalaipy39/bin/colossalai" && torchrun --nproc_per_node=4 --nnodes=1 --node_rank=0 --rdzv_backend=c10d --rdzv_endpoint=127.0.0.1:29598 --rdzv_id=colossalai-default-job train.py --config configs/vit_1d_tp2.py'
+
+Exit code: 1
+
+Stdout: already printed
+
+Stderr: already printed
+
+
+
+====== Training on All Nodes =====
+127.0.0.1: failure
+
+====== Stopping All Nodes =====
+127.0.0.1: finish
